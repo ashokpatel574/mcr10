@@ -1,0 +1,235 @@
+.main_container {
+  max-width: 145rem;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1.5fr 8.5fr;
+  grid-template-areas: "sideNav main";
+  gap: 1.5rem;
+}
+
+.sideNav_container {
+  grid-area: sideNav;
+  gap: 2rem;
+  background-color: #222;
+  color: #fff;
+  padding: 4rem 2rem;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.sideNav_list {
+  gap: 3rem;
+}
+
+.sideNav_listItem a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.inventory_container,
+.product_container {
+  grid-area: main;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 2.5rem 1rem;
+}
+
+.product_container {
+  gap: 1.5rem;
+}
+
+.inventory_container {
+  padding: 3rem 2rem;
+}
+
+.inventoryLevel_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.inventoryLevl_listItem {
+  gap: 1rem;
+  max-width: 18rem;
+  width: 100%;
+  height: 12rem;
+  background-color: #eee;
+  border-radius: 0.5rem;
+}
+
+.totalStock_value {
+  color: green;
+}
+
+.totalDelivered_value {
+  color: orangered;
+}
+
+.lowStock_value {
+  color: red;
+}
+
+.department_container_wrapper li {
+  cursor: pointer;
+}
+
+.inventoryLevl_listItem p:first-child {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.productFilter_section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.productsList_header span {
+  text-align: left;
+}
+
+.invertory_productsList_item span {
+  text-align: center;
+}
+
+.invertory_productsList_item span,
+.productsList_header span {
+  cursor: pointer;
+  max-width: 18rem;
+  width: 100%;
+}
+
+.invertory_productsList {
+  gap: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.invertory_productsList_item-image {
+  display: flex;
+  max-width: 10rem;
+  width: 100%;
+  height: 10rem;
+  cursor: pointer;
+}
+
+.productsList_header {
+  border: 1px solid #ccc;
+  padding: 1rem 1.5rem;
+}
+
+.notItem_avaiable {
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.invertory_productsList_item,
+.productsList_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.invertory_productsList_item {
+  border-bottom: 1px solid #ccc;
+}
+
+.invertory_productsList_item-description,
+.invertory_productsList_item-name {
+  max-width: 15rem;
+  width: 100%;
+}
+
+.invertory_productsList_item-name {
+  color: blue;
+  text-decoration: underline;
+}
+
+.inventory_container_form {
+  width: 100%;
+  gap: 2rem;
+}
+
+.inventory_container_form h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.inventory_container_form_wrapper {
+  width: 60%;
+  gap: 2rem;
+}
+
+.inventory_container_form_wrapper div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.inventory_container_form_wrapper label,
+.inventory_container_form_wrapper input,
+.inventory_container_form_wrapper textarea {
+  display: block;
+  width: 100%;
+}
+
+.inventory_container_form_wrapper input,
+.inventory_container_form_wrapper select {
+  padding: 0.8rem 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inventory_container_form_wrapper textarea {
+  padding: 0.8rem 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  width: 100%;
+}
+
+.inventory_container_form_wrapper select {
+  width: 50%;
+}
+
+.inventory_container_form_wrapper .submitBtn {
+  padding: 0.6rem 1.4rem;
+  font-size: 1.8rem;
+  width: 30%;
+}
+
+.invertory_singleItem_list {
+  gap: 1.5rem;
+}
+
+.invertory_singleItem_list div {
+  max-width: 40rem;
+  width: 100%;
+  height: 30rem;
+}
+
+.invertory_singleItem_list div img {
+  object-fit: contain;
+}
+
+.invertory_singleItem_list h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.invertory_singleItem_list button {
+  margin-bottom: 1rem;
+}
